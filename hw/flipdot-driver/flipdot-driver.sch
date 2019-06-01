@@ -523,7 +523,7 @@ $EndComp
 Wire Wire Line
 	8200 9250 8200 9400
 $Comp
-L flipdot-driver-rescue:XL6009-controller-cache DC1
+L flipdot-driver-rescue:XL6009-controller-cache-flipdot-driver-rescue DC1
 U 1 1 5C26E249
 P 1900 1100
 F 0 "DC1" H 2541 928 60  0000 L CNN
@@ -534,7 +534,7 @@ F 3 "" H 1900 1100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:L-controller-cache L1
+L flipdot-driver-rescue:L-controller-cache-flipdot-driver-rescue L1
 U 1 1 5C26E658
 P 1850 750
 F 0 "L1" V 2040 750 50  0000 C CNN
@@ -545,7 +545,7 @@ F 3 "" H 1850 750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L flipdot-driver-rescue:D_Schottky-controller-cache D1
+L flipdot-driver-rescue:D_Schottky-controller-cache-flipdot-driver-rescue D1
 U 1 1 5C26E7E0
 P 2500 750
 F 0 "D1" H 2500 534 50  0000 C CNN
@@ -578,7 +578,7 @@ F 3 "~" H 3000 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache C2
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C2
 U 1 1 5C26ECD5
 P 1250 1500
 F 0 "C2" H 1365 1546 50  0000 L CNN
@@ -589,7 +589,7 @@ F 3 "" H 1250 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache C3
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C3
 U 1 1 5C26ED7D
 P 3550 1450
 F 0 "C3" H 3665 1496 50  0000 L CNN
@@ -600,7 +600,7 @@ F 3 "" H 3550 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:CP-controller-cache C1
+L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue C1
 U 1 1 5C26F09E
 P 950 1500
 F 0 "C1" H 1068 1546 50  0000 L CNN
@@ -611,7 +611,7 @@ F 3 "" H 950 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:CP-controller-cache C4
+L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue C4
 U 1 1 5C26F314
 P 3900 1450
 F 0 "C4" H 4018 1496 50  0000 L CNN
@@ -1078,10 +1078,6 @@ P_CLK
 Wire Wire Line
 	13600 9300 14050 9300
 Wire Wire Line
-	8200 3150 7700 3150
-Wire Wire Line
-	8200 3250 7700 3250
-Wire Wire Line
 	8200 3350 7700 3350
 Wire Wire Line
 	8200 3450 7700 3450
@@ -1230,7 +1226,7 @@ F 3 "~" H 15200 4200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache C14
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C14
 U 1 1 5C81535A
 P 15050 4500
 F 0 "C14" H 15165 4546 50  0000 L CNN
@@ -1241,7 +1237,7 @@ F 3 "" H 15050 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache C15
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C15
 U 1 1 5C815450
 P 15400 4500
 F 0 "C15" H 15515 4546 50  0000 L CNN
@@ -1350,113 +1346,113 @@ SPI_MOSI
 Text Label 2700 6300 2    50   ~ 0
 NRF_IRQ
 $Comp
-L flipdot-driver-rescue:C-controller-cache C5
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C5
 U 1 1 5C98C3EA
-P 4850 1100
-F 0 "C5" H 4965 1146 50  0000 L CNN
-F 1 "100n" H 4965 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4888 950 50  0001 C CNN
-F 3 "" H 4850 1100 50  0001 C CNN
-	1    4850 1100
+P 7700 6700
+F 0 "C5" H 7815 6746 50  0000 L CNN
+F 1 "100n" H 7815 6655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7738 6550 50  0001 C CNN
+F 3 "" H 7700 6700 50  0001 C CNN
+	1    7700 6700
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache C6
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C6
 U 1 1 5C98C4BA
-P 5150 1100
-F 0 "C6" H 5265 1146 50  0000 L CNN
-F 1 "100n" H 5265 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5188 950 50  0001 C CNN
-F 3 "" H 5150 1100 50  0001 C CNN
-	1    5150 1100
+P 8000 6700
+F 0 "C6" H 8115 6746 50  0000 L CNN
+F 1 "100n" H 8115 6655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8038 6550 50  0001 C CNN
+F 3 "" H 8000 6700 50  0001 C CNN
+	1    8000 6700
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache C7
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C7
 U 1 1 5C98C550
-P 5450 1100
-F 0 "C7" H 5565 1146 50  0000 L CNN
-F 1 "100n" H 5565 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5488 950 50  0001 C CNN
-F 3 "" H 5450 1100 50  0001 C CNN
-	1    5450 1100
+P 8300 6700
+F 0 "C7" H 8415 6746 50  0000 L CNN
+F 1 "100n" H 8415 6655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8338 6550 50  0001 C CNN
+F 3 "" H 8300 6700 50  0001 C CNN
+	1    8300 6700
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache C8
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C8
 U 1 1 5C98C5EC
-P 5750 1100
-F 0 "C8" H 5865 1146 50  0000 L CNN
-F 1 "100n" H 5865 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5788 950 50  0001 C CNN
-F 3 "" H 5750 1100 50  0001 C CNN
-	1    5750 1100
+P 8600 6700
+F 0 "C8" H 8715 6746 50  0000 L CNN
+F 1 "100n" H 8715 6655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8638 6550 50  0001 C CNN
+F 3 "" H 8600 6700 50  0001 C CNN
+	1    8600 6700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR018
 U 1 1 5C98C6D8
-P 5300 850
-F 0 "#PWR018" H 5300 700 50  0001 C CNN
-F 1 "+3V3" H 5315 1023 50  0000 C CNN
-F 2 "" H 5300 850 50  0001 C CNN
-F 3 "" H 5300 850 50  0001 C CNN
-	1    5300 850 
+P 8150 6450
+F 0 "#PWR018" H 8150 6300 50  0001 C CNN
+F 1 "+3V3" H 8165 6623 50  0000 C CNN
+F 2 "" H 8150 6450 50  0001 C CNN
+F 3 "" H 8150 6450 50  0001 C CNN
+	1    8150 6450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR019
 U 1 1 5C98C7BE
-P 5350 1400
-F 0 "#PWR019" H 5350 1150 50  0001 C CNN
-F 1 "GND" H 5355 1227 50  0000 C CNN
-F 2 "" H 5350 1400 50  0001 C CNN
-F 3 "" H 5350 1400 50  0001 C CNN
-	1    5350 1400
+P 8200 7000
+F 0 "#PWR019" H 8200 6750 50  0001 C CNN
+F 1 "GND" H 8205 6827 50  0000 C CNN
+F 2 "" H 8200 7000 50  0001 C CNN
+F 3 "" H 8200 7000 50  0001 C CNN
+	1    8200 7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 1400 5350 1350
+	8200 7000 8200 6950
 Wire Wire Line
-	5350 1350 5150 1350
+	8200 6950 8000 6950
 Wire Wire Line
-	4850 1350 4850 1250
+	7700 6950 7700 6850
 Wire Wire Line
-	5150 1250 5150 1350
-Connection ~ 5150 1350
+	8000 6850 8000 6950
+Connection ~ 8000 6950
 Wire Wire Line
-	5150 1350 4850 1350
+	8000 6950 7700 6950
 Wire Wire Line
-	5350 1350 5450 1350
+	8200 6950 8300 6950
 Wire Wire Line
-	5750 1350 5750 1250
-Connection ~ 5350 1350
+	8600 6950 8600 6850
+Connection ~ 8200 6950
 Wire Wire Line
-	5450 1250 5450 1350
-Connection ~ 5450 1350
+	8300 6850 8300 6950
+Connection ~ 8300 6950
 Wire Wire Line
-	5450 1350 5750 1350
+	8300 6950 8600 6950
 Wire Wire Line
-	4850 950  4850 900 
+	7700 6550 7700 6500
 Wire Wire Line
-	4850 900  5150 900 
+	7700 6500 8000 6500
 Wire Wire Line
-	5750 900  5750 950 
+	8600 6500 8600 6550
 Wire Wire Line
-	5300 850  5300 900 
-Connection ~ 5300 900 
+	8150 6450 8150 6500
+Connection ~ 8150 6500
 Wire Wire Line
-	5300 900  5450 900 
+	8150 6500 8300 6500
 Wire Wire Line
-	5150 950  5150 900 
-Connection ~ 5150 900 
+	8000 6550 8000 6500
+Connection ~ 8000 6500
 Wire Wire Line
-	5150 900  5300 900 
+	8000 6500 8150 6500
 Wire Wire Line
-	5450 950  5450 900 
-Connection ~ 5450 900 
+	8300 6550 8300 6500
+Connection ~ 8300 6500
 Wire Wire Line
-	5450 900  5750 900 
+	8300 6500 8600 6500
 $Comp
 L Regulator_Linear:AZ1117-3.3 U4
 U 1 1 5CA628A1
@@ -1469,7 +1465,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 7100 1000 50  0001 C
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache C9
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C9
 U 1 1 5CA62C8B
 P 6550 1150
 F 0 "C9" H 6665 1196 50  0000 L CNN
@@ -1480,7 +1476,7 @@ F 3 "" H 6550 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache C11
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C11
 U 1 1 5CA62D35
 P 7600 1150
 F 0 "C11" H 7715 1196 50  0000 L CNN
@@ -1629,7 +1625,7 @@ F 3 "~" H 7750 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache C12
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C12
 U 1 1 5CC51283
 P 7600 4250
 F 0 "C12" H 7715 4296 50  0000 L CNN
@@ -1640,7 +1636,7 @@ F 3 "" H 7600 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache C13
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C13
 U 1 1 5CC5134B
 P 7900 4250
 F 0 "C13" H 8015 4296 50  0000 L CNN
@@ -1757,34 +1753,34 @@ F 3 "" H 10500 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:LED-controller-cache D3
+L flipdot-driver-rescue:LED-controller-cache-flipdot-driver-rescue D3
 U 1 1 5CD90A27
 P 9900 950
 F 0 "D3" V 9938 833 50  0000 R CNN
 F 1 "LED" V 9847 833 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 9900 950 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 9900 950 50  0001 C CNN
 F 3 "" H 9900 950 50  0001 C CNN
 	1    9900 950 
 	0    -1   -1   0   
 $EndComp
 $Comp
-L flipdot-driver-rescue:LED-controller-cache D4
+L flipdot-driver-rescue:LED-controller-cache-flipdot-driver-rescue D4
 U 1 1 5CD90BD5
 P 10200 950
 F 0 "D4" V 10238 833 50  0000 R CNN
 F 1 "LED" V 10147 833 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 10200 950 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 10200 950 50  0001 C CNN
 F 3 "" H 10200 950 50  0001 C CNN
 	1    10200 950 
 	0    -1   -1   0   
 $EndComp
 $Comp
-L flipdot-driver-rescue:LED-controller-cache D5
+L flipdot-driver-rescue:LED-controller-cache-flipdot-driver-rescue D5
 U 1 1 5CD90C81
 P 10500 950
 F 0 "D5" V 10538 833 50  0000 R CNN
 F 1 "LED" V 10447 833 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 10500 950 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 10500 950 50  0001 C CNN
 F 3 "" H 10500 950 50  0001 C CNN
 	1    10500 950 
 	0    -1   -1   0   
@@ -1944,7 +1940,7 @@ Connection ~ 7150 6200
 Wire Wire Line
 	7150 6200 7150 6100
 $Comp
-L flipdot-driver-rescue:C-controller-cache C10
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C10
 U 1 1 5D06CD87
 P 7350 6350
 F 0 "C10" H 7465 6396 50  0000 L CNN
@@ -1965,12 +1961,12 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x04 J4
 U 1 1 5D096E6A
-P 3500 5900
-F 0 "J4" H 3420 5475 50  0000 C CNN
-F 1 "I2C" H 3420 5566 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 3500 5900 50  0001 C CNN
-F 3 "~" H 3500 5900 50  0001 C CNN
-	1    3500 5900
+P 3500 5800
+F 0 "J4" H 3420 5375 50  0000 C CNN
+F 1 "I2C" H 3420 5466 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 3500 5800 50  0001 C CNN
+F 3 "~" H 3500 5800 50  0001 C CNN
+	1    3500 5800
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -2055,7 +2051,7 @@ U 1 1 5D16BF37
 P 5550 3000
 F 0 "J7" H 5605 3467 50  0000 C CNN
 F 1 "USB_B_Micro" H 5605 3376 50  0000 C CNN
-F 2 "" H 5700 2950 50  0001 C CNN
+F 2 "stm32_converter_footprints:USB_Micro-B" H 5700 2950 50  0001 C CNN
 F 3 "~" H 5700 2950 50  0001 C CNN
 	1    5550 3000
 	1    0    0    -1  
@@ -2082,32 +2078,6 @@ F 3 "~" H 3500 4950 50  0001 C CNN
 	1    3500 4950
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R R14
-U 1 1 5D1C42CA
-P 7550 3150
-F 0 "R14" V 7350 3150 50  0000 C CNN
-F 1 "22R" V 7450 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 3150 50  0001 C CNN
-F 3 "~" H 7550 3150 50  0001 C CNN
-	1    7550 3150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R15
-U 1 1 5D1C441A
-P 7550 3250
-F 0 "R15" V 7750 3250 50  0000 C CNN
-F 1 "22R" V 7650 3250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 3250 50  0001 C CNN
-F 3 "~" H 7550 3250 50  0001 C CNN
-	1    7550 3250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7350 2950 7350 3150
-Wire Wire Line
-	7350 3150 7400 3150
 $Comp
 L power:GND #PWR024
 U 1 1 5D2199DA
@@ -2217,40 +2187,34 @@ Wire Wire Line
 	3700 5150 3850 5150
 Wire Wire Line
 	3700 4850 4450 4850
-Wire Wire Line
-	3700 5900 3950 5900
-Wire Wire Line
-	3700 6000 3950 6000
-Text Label 3950 6000 2    50   ~ 0
-I2C_SDA
 Text Label 3950 5900 2    50   ~ 0
+I2C_SDA
+Text Label 3950 5800 2    50   ~ 0
 I2C_SCL
 $Comp
 L power:+3V3 #PWR014
 U 1 1 5D6808CA
-P 3900 5700
-F 0 "#PWR014" H 3900 5550 50  0001 C CNN
-F 1 "+3V3" H 3915 5873 50  0000 C CNN
-F 2 "" H 3900 5700 50  0001 C CNN
-F 3 "" H 3900 5700 50  0001 C CNN
-	1    3900 5700
+P 3900 5600
+F 0 "#PWR014" H 3900 5450 50  0001 C CNN
+F 1 "+3V3" H 3915 5773 50  0000 C CNN
+F 2 "" H 3900 5600 50  0001 C CNN
+F 3 "" H 3900 5600 50  0001 C CNN
+	1    3900 5600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR016
 U 1 1 5D680991
-P 4100 5800
-F 0 "#PWR016" H 4100 5550 50  0001 C CNN
-F 1 "GND" H 4105 5627 50  0000 C CNN
-F 2 "" H 4100 5800 50  0001 C CNN
-F 3 "" H 4100 5800 50  0001 C CNN
-	1    4100 5800
+P 4150 6000
+F 0 "#PWR016" H 4150 5750 50  0001 C CNN
+F 1 "GND" H 4155 5827 50  0000 C CNN
+F 2 "" H 4150 6000 50  0001 C CNN
+F 3 "" H 4150 6000 50  0001 C CNN
+	1    4150 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 5800 4100 5800
-Wire Wire Line
-	3700 5700 3900 5700
+	3700 5600 3900 5600
 $Comp
 L Connector_Generic:Conn_01x02 J9
 U 1 1 5D725882
@@ -2321,7 +2285,7 @@ USART_TX
 Text Label 4450 6300 2    50   ~ 0
 USART_RX
 $Comp
-L flipdot-driver-rescue:D_Schottky-controller-cache D6
+L flipdot-driver-rescue:D_Schottky-controller-cache-flipdot-driver-rescue D6
 U 1 1 5C783BF6
 P 8700 1150
 F 0 "D6" H 8700 1366 50  0000 C CNN
@@ -2523,9 +2487,9 @@ Wire Wire Line
 Connection ~ 8000 5450
 Wire Wire Line
 	8000 5450 7900 5450
-Text Label 7350 2950 0    50   ~ 0
+Text Label 6700 3250 0    50   ~ 0
 USB1_N
-Text Label 7250 3250 0    50   ~ 0
+Text Label 6700 2250 0    50   ~ 0
 USB1_P
 Wire Wire Line
 	6100 2750 6050 2750
@@ -2539,14 +2503,9 @@ Wire Wire Line
 Wire Wire Line
 	5950 3100 6200 3100
 Wire Wire Line
-	7200 3250 7400 3250
-Wire Wire Line
 	6700 3250 7000 3250
 Wire Wire Line
 	7000 3250 7000 3150
-Wire Wire Line
-	7000 3150 7350 3150
-Connection ~ 7350 3150
 Wire Wire Line
 	7100 2800 7100 2750
 $Comp
@@ -2574,7 +2533,7 @@ F 3 "" H 7200 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:R-controller-cache R36
+L flipdot-driver-rescue:R-controller-cache-flipdot-driver-rescue R36
 U 1 1 5C29AE4A
 P 7200 2150
 F 0 "R36" H 7270 2196 50  0000 L CNN
@@ -2805,7 +2764,7 @@ Wire Wire Line
 Wire Wire Line
 	15000 2350 15500 2350
 $Comp
-L flipdot-driver-rescue:stm32_STM32F103C(8-B)Tx-STM32_converter-cache U6
+L flipdot-driver-rescue:stm32_STM32F103C(8-B)Tx-STM32_converter-cache-flipdot-driver-rescue U6
 U 1 1 5C4F9114
 P 11600 4150
 F 0 "U6" H 11600 6607 50  0000 C CNN
@@ -2832,7 +2791,7 @@ Wire Wire Line
 Wire Wire Line
 	15000 2050 15500 2050
 Text Label 15500 2650 2    50   ~ 0
-LV_RES
+LV_RST
 Text Label 15500 2750 2    50   ~ 0
 LV_CLK
 Text Label 15500 2850 2    50   ~ 0
@@ -2861,12 +2820,12 @@ F 3 "" H 5650 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:LED-controller-cache D7
+L flipdot-driver-rescue:LED-controller-cache-flipdot-driver-rescue D7
 U 1 1 5DEBAEF3
 P 5650 4350
 F 0 "D7" V 5688 4233 50  0000 R CNN
 F 1 "LED" V 5597 4233 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 5650 4350 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5650 4350 50  0001 C CNN
 F 3 "" H 5650 4350 50  0001 C CNN
 	1    5650 4350
 	0    -1   -1   0   
@@ -2902,12 +2861,12 @@ F 3 "" H 6400 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:LED-controller-cache D8
+L flipdot-driver-rescue:LED-controller-cache-flipdot-driver-rescue D8
 U 1 1 5DF44183
 P 6400 4350
 F 0 "D8" V 6438 4233 50  0000 R CNN
 F 1 "LED" V 6347 4233 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 6400 4350 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 6400 4350 50  0001 C CNN
 F 3 "" H 6400 4350 50  0001 C CNN
 	1    6400 4350
 	0    -1   -1   0   
@@ -3008,7 +2967,7 @@ F 3 "" H 800 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:CP-controller-cache C16
+L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue C16
 U 1 1 5CF6C5C2
 P 700 2850
 F 0 "C16" H 818 2896 50  0000 L CNN
@@ -3019,7 +2978,7 @@ F 3 "" H 700 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache C17
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C17
 U 1 1 5CF6CCDF
 P 1050 3000
 F 0 "C17" H 1165 3046 50  0000 L CNN
@@ -3030,7 +2989,7 @@ F 3 "" H 1050 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:L-controller-cache L2
+L flipdot-driver-rescue:L-controller-cache-flipdot-driver-rescue L2
 U 1 1 5CF6D440
 P 2600 2350
 F 0 "L2" V 2790 2350 50  0000 C CNN
@@ -3042,7 +3001,7 @@ F 4 "https://lcsc.com/product-detail/Inductors-SMD_Bao-Cheng-Elec-BC-BCRH1212Y-6
 	0    -1   -1   0   
 $EndComp
 $Comp
-L flipdot-driver-rescue:D_Schottky-controller-cache D2
+L flipdot-driver-rescue:D_Schottky-controller-cache-flipdot-driver-rescue D2
 U 1 1 5CF6DC84
 P 3400 2350
 F 0 "D2" H 3400 2134 50  0000 C CNN
@@ -3075,7 +3034,7 @@ F 3 "~" H 3650 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache C20
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C20
 U 1 1 5CF6F069
 P 4050 2800
 F 0 "C20" H 4165 2846 50  0000 L CNN
@@ -3086,11 +3045,11 @@ F 3 "" H 4050 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:CP-controller-cache C21
+L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue C21
 U 1 1 5CF6F72F
 P 4400 2800
 F 0 "C21" H 4518 2846 50  0000 L CNN
-F 1 "220u" H 4518 2755 50  0000 L CNN
+F 1 "470u" H 4518 2755 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_10x10" H 4438 2650 50  0001 C CNN
 F 3 "" H 4400 2800 50  0001 C CNN
 	1    4400 2800
@@ -3099,7 +3058,7 @@ $EndComp
 Text Label 1550 2100 2    50   ~ 0
 24V_EN
 $Comp
-L flipdot-driver-rescue:C-controller-cache C19
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C19
 U 1 1 5CF703D9
 P 1950 3250
 F 0 "C19" H 2065 3296 50  0000 L CNN
@@ -3207,7 +3166,7 @@ Connection ~ 4400 2350
 Wire Wire Line
 	800  2550 1050 2550
 $Comp
-L flipdot-driver-rescue:C-controller-cache C18
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C18
 U 1 1 5D79E9FF
 P 1350 2850
 F 0 "C18" H 1465 2896 50  0000 L CNN
@@ -3271,7 +3230,7 @@ Wire Wire Line
 	1650 2100 1550 2100
 Connection ~ 1650 2850
 $Comp
-L LCSC:AX5201 U8
+L flipdot-driver-rescue:AX5201-LCSC U8
 U 1 1 5DB4EC83
 P 2600 2950
 F 0 "U8" H 2600 3475 50  0000 C CNN
@@ -3281,4 +3240,120 @@ F 3 "" H 2600 2950 50  0001 C CNN
 	1    2600 2950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Pack02 RN5
+U 1 1 5CFAB9A2
+P 7500 3250
+F 0 "RN5" V 7183 3250 50  0000 C CNN
+F 1 "22R" V 7274 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_2x0402" V 7675 3250 50  0001 C CNN
+F 3 "~" H 7500 3250 50  0001 C CNN
+	1    7500 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 3150 8200 3150
+Wire Wire Line
+	7700 3250 8200 3250
+Wire Wire Line
+	7200 3250 7300 3250
+Wire Wire Line
+	7300 3150 7000 3150
+Text Label 6000 2250 0    50   ~ 0
+USB2_P
+Text Label 5700 2150 0    50   ~ 0
+USB2_N
+$Comp
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C22
+U 1 1 5D0FB237
+P 900 6900
+F 0 "C22" H 1015 6946 50  0000 L CNN
+F 1 "100n" H 1015 6855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 938 6750 50  0001 C CNN
+F 3 "" H 900 6900 50  0001 C CNN
+	1    900  6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR068
+U 1 1 5D1043B2
+P 900 7150
+F 0 "#PWR068" H 900 6900 50  0001 C CNN
+F 1 "GND" H 905 6977 50  0000 C CNN
+F 2 "" H 900 7150 50  0001 C CNN
+F 3 "" H 900 7150 50  0001 C CNN
+	1    900  7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR067
+U 1 1 5D104626
+P 900 6650
+F 0 "#PWR067" H 900 6500 50  0001 C CNN
+F 1 "+3V3" H 915 6823 50  0000 C CNN
+F 2 "" H 900 6650 50  0001 C CNN
+F 3 "" H 900 6650 50  0001 C CNN
+	1    900  6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  6650 900  6750
+Wire Wire Line
+	900  7050 900  7150
+$Comp
+L controller-cache:R R11
+U 1 1 5D210FC0
+P 4300 5600
+F 0 "R11" H 4370 5646 50  0000 L CNN
+F 1 "1k5" H 4370 5555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 5600 50  0001 C CNN
+F 3 "" H 4300 5600 50  0001 C CNN
+	1    4300 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L controller-cache:R R12
+U 1 1 5D2115E1
+P 4550 5700
+F 0 "R12" H 4620 5746 50  0000 L CNN
+F 1 "1k5" H 4620 5655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4480 5700 50  0001 C CNN
+F 3 "" H 4550 5700 50  0001 C CNN
+	1    4550 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5800 4300 5750
+Wire Wire Line
+	3700 5800 4300 5800
+Wire Wire Line
+	4550 5900 4550 5850
+Wire Wire Line
+	3700 5900 4550 5900
+$Comp
+L power:+3V3 #PWR069
+U 1 1 5D2B75C8
+P 4450 5350
+F 0 "#PWR069" H 4450 5200 50  0001 C CNN
+F 1 "+3V3" H 4465 5523 50  0000 C CNN
+F 2 "" H 4450 5350 50  0001 C CNN
+F 3 "" H 4450 5350 50  0001 C CNN
+	1    4450 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5450 4300 5400
+Wire Wire Line
+	4300 5400 4450 5400
+Wire Wire Line
+	4450 5400 4450 5350
+Wire Wire Line
+	4450 5400 4550 5400
+Wire Wire Line
+	4550 5400 4550 5550
+Connection ~ 4450 5400
+Wire Wire Line
+	4150 5700 4150 6000
+Wire Wire Line
+	3700 5700 4150 5700
 $EndSCHEMATC
