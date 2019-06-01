@@ -102,28 +102,6 @@ P_VCC
 Text Label 2300 5200 2    50   ~ 0
 P_GND
 $Comp
-L power:+24V #PWR013
-U 1 1 5C096117
-P 3900 1100
-F 0 "#PWR013" H 3900 950 50  0001 C CNN
-F 1 "+24V" H 3915 1273 50  0000 C CNN
-F 2 "" H 3900 1100 50  0001 C CNN
-F 3 "" H 3900 1100 50  0001 C CNN
-	1    3900 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5C09617E
-P 700 1850
-F 0 "#PWR02" H 700 1600 50  0001 C CNN
-F 1 "GND" H 705 1677 50  0000 C CNN
-F 2 "" H 700 1850 50  0001 C CNN
-F 3 "" H 700 1850 50  0001 C CNN
-	1    700  1850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+24V #PWR020
 U 1 1 5C096746
 P 5750 7000
@@ -522,206 +500,6 @@ F 3 "" H 8200 9400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8200 9250 8200 9400
-$Comp
-L flipdot-driver-rescue:XL6009-controller-cache-flipdot-driver-rescue DC1
-U 1 1 5C26E249
-P 1900 1100
-F 0 "DC1" H 2541 928 60  0000 L CNN
-F 1 "XL6009" H 2541 822 60  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 1900 1100 60  0001 C CNN
-F 3 "" H 1900 1100 60  0001 C CNN
-	1    1900 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L flipdot-driver-rescue:L-controller-cache-flipdot-driver-rescue L1
-U 1 1 5C26E658
-P 1850 750
-F 0 "L1" V 2040 750 50  0000 C CNN
-F 1 "33u" V 1949 750 50  0000 C CNN
-F 2 "Inductor_SMD:L_12x12mm_H8mm" H 1850 750 50  0001 C CNN
-F 3 "" H 1850 750 50  0001 C CNN
-	1    1850 750 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L flipdot-driver-rescue:D_Schottky-controller-cache-flipdot-driver-rescue D1
-U 1 1 5C26E7E0
-P 2500 750
-F 0 "D1" H 2500 534 50  0000 C CNN
-F 1 "SK33" H 2500 625 50  0000 C CNN
-F 2 "Diode_SMD:D_SMC" H 2500 750 50  0001 C CNN
-F 3 "" H 2500 750 50  0001 C CNN
-	1    2500 750 
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5C26E8F0
-P 3000 1050
-F 0 "R1" H 3070 1096 50  0000 L CNN
-F 1 "12k" H 3070 1005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2930 1050 50  0001 C CNN
-F 3 "~" H 3000 1050 50  0001 C CNN
-	1    3000 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5C26E990
-P 3000 1450
-F 0 "R2" H 3070 1496 50  0000 L CNN
-F 1 "680R" H 3070 1405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2930 1450 50  0001 C CNN
-F 3 "~" H 3000 1450 50  0001 C CNN
-	1    3000 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C2
-U 1 1 5C26ECD5
-P 1250 1500
-F 0 "C2" H 1365 1546 50  0000 L CNN
-F 1 "1u" H 1365 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1288 1350 50  0001 C CNN
-F 3 "" H 1250 1500 50  0001 C CNN
-	1    1250 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C3
-U 1 1 5C26ED7D
-P 3550 1450
-F 0 "C3" H 3665 1496 50  0000 L CNN
-F 1 "1u" H 3665 1405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3588 1300 50  0001 C CNN
-F 3 "" H 3550 1450 50  0001 C CNN
-	1    3550 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue C1
-U 1 1 5C26F09E
-P 950 1500
-F 0 "C1" H 1068 1546 50  0000 L CNN
-F 1 "100u" H 1068 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x5.3" H 988 1350 50  0001 C CNN
-F 3 "" H 950 1500 50  0001 C CNN
-	1    950  1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue C4
-U 1 1 5C26F314
-P 3900 1450
-F 0 "C4" H 4018 1496 50  0000 L CNN
-F 1 "220u" H 4018 1405 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_10x10" H 3938 1300 50  0001 C CNN
-F 3 "" H 3900 1450 50  0001 C CNN
-	1    3900 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR01
-U 1 1 5C27AE33
-P 700 1200
-F 0 "#PWR01" H 700 1050 50  0001 C CNN
-F 1 "+12V" H 715 1373 50  0000 C CNN
-F 2 "" H 700 1200 50  0001 C CNN
-F 3 "" H 700 1200 50  0001 C CNN
-	1    700  1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	700  1200 700  1250
-Wire Wire Line
-	700  1250 950  1250
-Wire Wire Line
-	950  1350 950  1250
-Connection ~ 950  1250
-Wire Wire Line
-	950  1250 1250 1250
-Wire Wire Line
-	1250 1350 1250 1250
-Connection ~ 1250 1250
-Wire Wire Line
-	1250 1250 1500 1250
-Wire Wire Line
-	1250 1250 1250 750 
-Wire Wire Line
-	1250 750  1700 750 
-Wire Wire Line
-	2000 750  2100 750 
-Wire Wire Line
-	2100 750  2100 950 
-Wire Wire Line
-	2100 750  2350 750 
-Connection ~ 2100 750 
-Wire Wire Line
-	2650 750  3000 750 
-Wire Wire Line
-	3000 750  3000 900 
-Wire Wire Line
-	2500 1250 3000 1250
-Wire Wire Line
-	3000 1250 3000 1200
-Wire Wire Line
-	3000 1250 3000 1300
-Connection ~ 3000 1250
-Wire Wire Line
-	3000 750  3300 750 
-Wire Wire Line
-	3300 750  3300 1200
-Wire Wire Line
-	3300 1200 3550 1200
-Wire Wire Line
-	3900 1200 3900 1100
-Connection ~ 3000 750 
-Wire Wire Line
-	3900 1200 3900 1300
-Connection ~ 3900 1200
-Wire Wire Line
-	3550 1200 3550 1300
-Connection ~ 3550 1200
-Wire Wire Line
-	3550 1200 3900 1200
-Wire Wire Line
-	950  1650 950  1800
-Wire Wire Line
-	950  1800 1250 1800
-Wire Wire Line
-	700  1850 700  1800
-Wire Wire Line
-	700  1800 950  1800
-Connection ~ 950  1800
-Wire Wire Line
-	1250 1650 1250 1800
-Connection ~ 1250 1800
-Wire Wire Line
-	1250 1800 1850 1800
-Wire Wire Line
-	1850 1700 1850 1800
-Connection ~ 1850 1800
-Wire Wire Line
-	1850 1800 3000 1800
-Connection ~ 3000 1800
-Wire Wire Line
-	3000 1800 3550 1800
-Wire Wire Line
-	3550 1600 3550 1800
-Connection ~ 3550 1800
-Wire Wire Line
-	3900 1800 3900 1600
-Wire Wire Line
-	3550 1800 3900 1800
-Wire Wire Line
-	3000 1600 3000 1800
-Wire Wire Line
-	2150 1700 2150 2050
-Wire Wire Line
-	2150 2050 2950 2050
-Text Label 2950 2050 2    50   ~ 0
-24V_EN
 $Comp
 L power:GND #PWR06
 U 1 1 5C32248E
@@ -1687,156 +1465,6 @@ Wire Wire Line
 	7900 3850 8200 3850
 Connection ~ 7900 3900
 $Comp
-L power:+12V #PWR040
-U 1 1 5CD903ED
-P 9900 750
-F 0 "#PWR040" H 9900 600 50  0001 C CNN
-F 1 "+12V" H 9915 923 50  0000 C CNN
-F 2 "" H 9900 750 50  0001 C CNN
-F 3 "" H 9900 750 50  0001 C CNN
-	1    9900 750 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR042
-U 1 1 5CD90503
-P 10200 750
-F 0 "#PWR042" H 10200 600 50  0001 C CNN
-F 1 "+3V3" H 10215 923 50  0000 C CNN
-F 2 "" H 10200 750 50  0001 C CNN
-F 3 "" H 10200 750 50  0001 C CNN
-	1    10200 750 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+24V #PWR044
-U 1 1 5CD9063C
-P 10500 750
-F 0 "#PWR044" H 10500 600 50  0001 C CNN
-F 1 "+24V" H 10515 923 50  0000 C CNN
-F 2 "" H 10500 750 50  0001 C CNN
-F 3 "" H 10500 750 50  0001 C CNN
-	1    10500 750 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR041
-U 1 1 5CD9074B
-P 9900 1600
-F 0 "#PWR041" H 9900 1350 50  0001 C CNN
-F 1 "GND" H 9905 1427 50  0000 C CNN
-F 2 "" H 9900 1600 50  0001 C CNN
-F 3 "" H 9900 1600 50  0001 C CNN
-	1    9900 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR043
-U 1 1 5CD907ED
-P 10200 1600
-F 0 "#PWR043" H 10200 1350 50  0001 C CNN
-F 1 "GND" H 10205 1427 50  0000 C CNN
-F 2 "" H 10200 1600 50  0001 C CNN
-F 3 "" H 10200 1600 50  0001 C CNN
-	1    10200 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR045
-U 1 1 5CD90888
-P 10500 1600
-F 0 "#PWR045" H 10500 1350 50  0001 C CNN
-F 1 "GND" H 10505 1427 50  0000 C CNN
-F 2 "" H 10500 1600 50  0001 C CNN
-F 3 "" H 10500 1600 50  0001 C CNN
-	1    10500 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L flipdot-driver-rescue:LED-controller-cache-flipdot-driver-rescue D3
-U 1 1 5CD90A27
-P 9900 950
-F 0 "D3" V 9938 833 50  0000 R CNN
-F 1 "LED" V 9847 833 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" H 9900 950 50  0001 C CNN
-F 3 "" H 9900 950 50  0001 C CNN
-	1    9900 950 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L flipdot-driver-rescue:LED-controller-cache-flipdot-driver-rescue D4
-U 1 1 5CD90BD5
-P 10200 950
-F 0 "D4" V 10238 833 50  0000 R CNN
-F 1 "LED" V 10147 833 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" H 10200 950 50  0001 C CNN
-F 3 "" H 10200 950 50  0001 C CNN
-	1    10200 950 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L flipdot-driver-rescue:LED-controller-cache-flipdot-driver-rescue D5
-U 1 1 5CD90C81
-P 10500 950
-F 0 "D5" V 10538 833 50  0000 R CNN
-F 1 "LED" V 10447 833 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" H 10500 950 50  0001 C CNN
-F 3 "" H 10500 950 50  0001 C CNN
-	1    10500 950 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R24
-U 1 1 5CDB565B
-P 9900 1350
-F 0 "R24" H 9970 1396 50  0000 L CNN
-F 1 "1k5" H 9970 1305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9830 1350 50  0001 C CNN
-F 3 "~" H 9900 1350 50  0001 C CNN
-	1    9900 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R25
-U 1 1 5CDB573D
-P 10200 1350
-F 0 "R25" H 10270 1396 50  0000 L CNN
-F 1 "330R" H 10270 1305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10130 1350 50  0001 C CNN
-F 3 "~" H 10200 1350 50  0001 C CNN
-	1    10200 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R26
-U 1 1 5CDB57F1
-P 10500 1350
-F 0 "R26" H 10570 1396 50  0000 L CNN
-F 1 "4k7" H 10570 1305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10430 1350 50  0001 C CNN
-F 3 "~" H 10500 1350 50  0001 C CNN
-	1    10500 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 1600 9900 1500
-Wire Wire Line
-	10200 1600 10200 1500
-Wire Wire Line
-	10500 1600 10500 1500
-Wire Wire Line
-	10500 1200 10500 1100
-Wire Wire Line
-	10200 1200 10200 1100
-Wire Wire Line
-	9900 1200 9900 1100
-Wire Wire Line
-	9900 800  9900 750 
-Wire Wire Line
-	10200 800  10200 750 
-Wire Wire Line
-	10500 800  10500 750 
-$Comp
 L power:GND #PWR029
 U 1 1 5CF07E0C
 P 7400 5550
@@ -1967,17 +1595,6 @@ F 1 "I2C" H 3420 5466 50  0000 C CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 3500 5800 50  0001 C CNN
 F 3 "~" H 3500 5800 50  0001 C CNN
 	1    3500 5800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J10
-U 1 1 5D097195
-P 11150 1000
-F 0 "J10" H 11070 675 50  0000 C CNN
-F 1 "AUX_Power" H 11070 766 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 11150 1000 50  0001 C CNN
-F 3 "~" H 11150 1000 50  0001 C CNN
-	1    11150 1000
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -2227,28 +1844,6 @@ F 3 "~" H 8200 1250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+12V #PWR037
-U 1 1 5D726530
-P 11700 900
-F 0 "#PWR037" H 11700 750 50  0001 C CNN
-F 1 "+12V" H 11715 1073 50  0000 C CNN
-F 2 "" H 11700 900 50  0001 C CNN
-F 3 "" H 11700 900 50  0001 C CNN
-	1    11700 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR038
-U 1 1 5D726827
-P 11700 1000
-F 0 "#PWR038" H 11700 750 50  0001 C CNN
-F 1 "GND" H 11705 827 50  0000 C CNN
-F 2 "" H 11700 1000 50  0001 C CNN
-F 3 "" H 11700 1000 50  0001 C CNN
-	1    11700 1000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR036
 U 1 1 5D7281E8
 P 8650 1650
@@ -2272,10 +1867,6 @@ F 3 "" H 9400 1150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8400 1150 8550 1150
-Wire Wire Line
-	11350 900  11700 900 
-Wire Wire Line
-	11350 1000 11700 1000
 Wire Wire Line
 	4100 6300 4450 6300
 Wire Wire Line
@@ -2310,42 +1901,8 @@ Wire Wire Line
 	8850 1150 8950 1150
 Wire Wire Line
 	9250 1150 9400 1150
-$Comp
-L Connector:Conn_01x01_Female J11
-U 1 1 5CF12D16
-P 8150 850
-F 0 "J11" H 8042 625 50  0000 C CNN
-F 1 "GND" H 8042 716 50  0000 C CNN
-F 2 "user:TestPoint_Plated_Hole_D1.6mm" H 8150 850 50  0001 C CNN
-F 3 "~" H 8150 850 50  0001 C CNN
-	1    8150 850 
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J12
-U 1 1 5CF166BF
-P 8150 1600
-F 0 "J12" H 8042 1375 50  0000 C CNN
-F 1 "+VIN" H 8042 1466 50  0000 C CNN
-F 2 "user:TestPoint_Plated_Hole_D1.6mm" H 8150 1600 50  0001 C CNN
-F 3 "~" H 8150 1600 50  0001 C CNN
-	1    8150 1600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8350 1600 8650 1600
-Wire Wire Line
-	8650 1600 8650 1650
-Wire Wire Line
-	8650 1600 8650 1250
 Wire Wire Line
 	8400 1250 8650 1250
-Connection ~ 8650 1600
-Wire Wire Line
-	8350 850  8550 850 
-Wire Wire Line
-	8550 850  8550 1150
-Connection ~ 8550 1150
 $Comp
 L Device:R_Pack04 RN1
 U 1 1 5CEEE1CF
@@ -2971,8 +2528,8 @@ L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue C16
 U 1 1 5CF6C5C2
 P 700 2850
 F 0 "C16" H 818 2896 50  0000 L CNN
-F 1 "470u" H 818 2805 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x5.3" H 738 2700 50  0001 C CNN
+F 1 "680u" H 818 2805 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 738 2700 50  0001 C CNN
 F 3 "" H 700 2850 50  0001 C CNN
 	1    700  2850
 	1    0    0    -1  
@@ -3049,8 +2606,8 @@ L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue C21
 U 1 1 5CF6F72F
 P 4400 2800
 F 0 "C21" H 4518 2846 50  0000 L CNN
-F 1 "470u" H 4518 2755 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_10x10" H 4438 2650 50  0001 C CNN
+F 1 "680u" H 4518 2755 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 4438 2650 50  0001 C CNN
 F 3 "" H 4400 2800 50  0001 C CNN
 	1    4400 2800
 	1    0    0    -1  
@@ -3356,4 +2913,26 @@ Wire Wire Line
 	4150 5700 4150 6000
 Wire Wire Line
 	3700 5700 4150 5700
+$Comp
+L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue C23
+U 1 1 5D3FC10B
+P 4800 2800
+F 0 "C23" H 4918 2846 50  0000 L CNN
+F 1 "680u" H 4918 2755 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 4838 2650 50  0001 C CNN
+F 3 "" H 4800 2800 50  0001 C CNN
+	1    4800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3500 4800 3500
+Wire Wire Line
+	4800 3500 4800 2950
+Connection ~ 4400 3500
+Wire Wire Line
+	4400 2350 4800 2350
+Wire Wire Line
+	4800 2350 4800 2650
+Wire Wire Line
+	8650 1250 8650 1650
 $EndSCHEMATC

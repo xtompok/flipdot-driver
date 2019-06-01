@@ -37,23 +37,6 @@ X QH' 9 400 -500 100 L 50 50 1 0 O
 ENDDRAW
 ENDDEF
 #
-# Connector_Conn_01x01_Female
-#
-DEF Connector_Conn_01x01_Female J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Conn_01x01_Female" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*
-$ENDFPLIST
-DRAW
-A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
-P 2 1 1 6 -50 0 -20 0 N
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_Generic_Conn_01x02
 #
 DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
@@ -740,23 +723,6 @@ DRAW
 S -40 -100 40 100 0 1 10 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# flipdot-driver-rescue_XL6009-controller-cache-flipdot-driver-rescue
-#
-DEF flipdot-driver-rescue_XL6009-controller-cache-flipdot-driver-rescue DC 0 40 Y Y 1 F N
-F0 "DC" -250 150 60 H V C CNN
-F1 "flipdot-driver-rescue_XL6009-controller-cache-flipdot-driver-rescue" -150 50 60 H V C CNN
-F2 "" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
-DRAW
-S -350 100 550 -550 0 1 0 N
-X GND 1 -50 -600 200 U 50 50 1 1 w
-X EN 2 250 -600 200 U 50 50 1 1 B
-X SW 3 200 150 200 D 50 50 1 1 B
-X VIN 4 -400 -150 200 R 50 50 1 1 W
-X FB 5 600 -150 200 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
