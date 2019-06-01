@@ -1004,7 +1004,7 @@ F 3 "~" H 15200 4200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C14
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C14
 U 1 1 5C81535A
 P 15050 4500
 F 0 "C14" H 15165 4546 50  0000 L CNN
@@ -1015,7 +1015,7 @@ F 3 "" H 15050 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C15
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C15
 U 1 1 5C815450
 P 15400 4500
 F 0 "C15" H 15515 4546 50  0000 L CNN
@@ -1124,7 +1124,7 @@ SPI_MOSI
 Text Label 2700 6300 2    50   ~ 0
 NRF_IRQ
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C5
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C5
 U 1 1 5C98C3EA
 P 7700 6700
 F 0 "C5" H 7815 6746 50  0000 L CNN
@@ -1135,7 +1135,7 @@ F 3 "" H 7700 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C6
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C6
 U 1 1 5C98C4BA
 P 8000 6700
 F 0 "C6" H 8115 6746 50  0000 L CNN
@@ -1146,7 +1146,7 @@ F 3 "" H 8000 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C7
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C7
 U 1 1 5C98C550
 P 8300 6700
 F 0 "C7" H 8415 6746 50  0000 L CNN
@@ -1157,7 +1157,7 @@ F 3 "" H 8300 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C8
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C8
 U 1 1 5C98C5EC
 P 8600 6700
 F 0 "C8" H 8715 6746 50  0000 L CNN
@@ -1243,7 +1243,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 7100 1000 50  0001 C
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C9
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C9
 U 1 1 5CA62C8B
 P 6550 1150
 F 0 "C9" H 6665 1196 50  0000 L CNN
@@ -1254,7 +1254,7 @@ F 3 "" H 6550 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C11
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C11
 U 1 1 5CA62D35
 P 7600 1150
 F 0 "C11" H 7715 1196 50  0000 L CNN
@@ -1403,7 +1403,7 @@ F 3 "~" H 7750 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C12
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C12
 U 1 1 5CC51283
 P 7600 4250
 F 0 "C12" H 7715 4296 50  0000 L CNN
@@ -1414,7 +1414,7 @@ F 3 "" H 7600 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C13
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C13
 U 1 1 5CC5134B
 P 7900 4250
 F 0 "C13" H 8015 4296 50  0000 L CNN
@@ -1568,7 +1568,7 @@ Connection ~ 7150 6200
 Wire Wire Line
 	7150 6200 7150 6100
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C10
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C10
 U 1 1 5D06CD87
 P 7350 6350
 F 0 "C10" H 7465 6396 50  0000 L CNN
@@ -1876,7 +1876,7 @@ USART_TX
 Text Label 4450 6300 2    50   ~ 0
 USART_RX
 $Comp
-L flipdot-driver-rescue:D_Schottky-controller-cache-flipdot-driver-rescue D6
+L flipdot-driver-rescue:D_Schottky-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue D6
 U 1 1 5C783BF6
 P 8700 1150
 F 0 "D6" H 8700 1366 50  0000 C CNN
@@ -2090,7 +2090,7 @@ F 3 "" H 7200 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:R-controller-cache-flipdot-driver-rescue R36
+L flipdot-driver-rescue:R-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue R36
 U 1 1 5C29AE4A
 P 7200 2150
 F 0 "R36" H 7270 2196 50  0000 L CNN
@@ -2321,7 +2321,7 @@ Wire Wire Line
 Wire Wire Line
 	15000 2350 15500 2350
 $Comp
-L flipdot-driver-rescue:stm32_STM32F103C(8-B)Tx-STM32_converter-cache-flipdot-driver-rescue U6
+L flipdot-driver-rescue:stm32_STM32F103C(8-B)Tx-STM32_converter-cache-flipdot-driver-rescue-flipdot-driver-rescue U6
 U 1 1 5C4F9114
 P 11600 4150
 F 0 "U6" H 11600 6607 50  0000 C CNN
@@ -2377,7 +2377,7 @@ F 3 "" H 5650 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:LED-controller-cache-flipdot-driver-rescue D7
+L flipdot-driver-rescue:LED-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue D7
 U 1 1 5DEBAEF3
 P 5650 4350
 F 0 "D7" V 5688 4233 50  0000 R CNN
@@ -2418,7 +2418,7 @@ F 3 "" H 6400 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:LED-controller-cache-flipdot-driver-rescue D8
+L flipdot-driver-rescue:LED-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue D8
 U 1 1 5DF44183
 P 6400 4350
 F 0 "D8" V 6438 4233 50  0000 R CNN
@@ -2524,7 +2524,7 @@ F 3 "" H 800 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue C16
+L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C16
 U 1 1 5CF6C5C2
 P 700 2850
 F 0 "C16" H 818 2896 50  0000 L CNN
@@ -2535,7 +2535,7 @@ F 3 "" H 700 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C17
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C17
 U 1 1 5CF6CCDF
 P 1050 3000
 F 0 "C17" H 1165 3046 50  0000 L CNN
@@ -2546,7 +2546,7 @@ F 3 "" H 1050 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:L-controller-cache-flipdot-driver-rescue L2
+L flipdot-driver-rescue:L-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue L2
 U 1 1 5CF6D440
 P 2600 2350
 F 0 "L2" V 2790 2350 50  0000 C CNN
@@ -2558,7 +2558,7 @@ F 4 "https://lcsc.com/product-detail/Inductors-SMD_Bao-Cheng-Elec-BC-BCRH1212Y-6
 	0    -1   -1   0   
 $EndComp
 $Comp
-L flipdot-driver-rescue:D_Schottky-controller-cache-flipdot-driver-rescue D2
+L flipdot-driver-rescue:D_Schottky-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue D2
 U 1 1 5CF6DC84
 P 3400 2350
 F 0 "D2" H 3400 2134 50  0000 C CNN
@@ -2591,7 +2591,7 @@ F 3 "~" H 3650 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C20
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C20
 U 1 1 5CF6F069
 P 4050 2800
 F 0 "C20" H 4165 2846 50  0000 L CNN
@@ -2602,7 +2602,7 @@ F 3 "" H 4050 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue C21
+L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C21
 U 1 1 5CF6F72F
 P 4400 2800
 F 0 "C21" H 4518 2846 50  0000 L CNN
@@ -2615,7 +2615,7 @@ $EndComp
 Text Label 1550 2100 2    50   ~ 0
 24V_EN
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C19
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C19
 U 1 1 5CF703D9
 P 1950 3250
 F 0 "C19" H 2065 3296 50  0000 L CNN
@@ -2723,7 +2723,7 @@ Connection ~ 4400 2350
 Wire Wire Line
 	800  2550 1050 2550
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C18
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C18
 U 1 1 5D79E9FF
 P 1350 2850
 F 0 "C18" H 1465 2896 50  0000 L CNN
@@ -2787,7 +2787,7 @@ Wire Wire Line
 	1650 2100 1550 2100
 Connection ~ 1650 2850
 $Comp
-L flipdot-driver-rescue:AX5201-LCSC U8
+L flipdot-driver-rescue:AX5201-LCSC-flipdot-driver-rescue U8
 U 1 1 5DB4EC83
 P 2600 2950
 F 0 "U8" H 2600 3475 50  0000 C CNN
@@ -2821,7 +2821,7 @@ USB2_P
 Text Label 5700 2150 0    50   ~ 0
 USB2_N
 $Comp
-L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue C22
+L flipdot-driver-rescue:C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C22
 U 1 1 5D0FB237
 P 900 6900
 F 0 "C22" H 1015 6946 50  0000 L CNN
@@ -2858,7 +2858,7 @@ Wire Wire Line
 Wire Wire Line
 	900  7050 900  7150
 $Comp
-L controller-cache:R R11
+L flipdot-driver-rescue:R-controller-cache R11
 U 1 1 5D210FC0
 P 4300 5600
 F 0 "R11" H 4370 5646 50  0000 L CNN
@@ -2869,7 +2869,7 @@ F 3 "" H 4300 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-cache:R R12
+L flipdot-driver-rescue:R-controller-cache R12
 U 1 1 5D2115E1
 P 4550 5700
 F 0 "R12" H 4620 5746 50  0000 L CNN
@@ -2914,7 +2914,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 5700 4150 5700
 $Comp
-L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue C23
+L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C23
 U 1 1 5D3FC10B
 P 4800 2800
 F 0 "C23" H 4918 2846 50  0000 L CNN
@@ -2935,4 +2935,46 @@ Wire Wire Line
 	4800 2350 4800 2650
 Wire Wire Line
 	8650 1250 8650 1650
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5CF749D3
+P 5350 950
+F 0 "H1" V 5304 1100 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5395 1100 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5350 950 50  0001 C CNN
+F 3 "~" H 5350 950 50  0001 C CNN
+	1    5350 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5CF763BF
+P 5350 1200
+F 0 "H2" V 5304 1350 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5395 1350 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5350 1200 50  0001 C CNN
+F 3 "~" H 5350 1200 50  0001 C CNN
+	1    5350 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5CF76D90
+P 5150 1750
+F 0 "#PWR0102" H 5150 1500 50  0001 C CNN
+F 1 "GND" H 5155 1577 50  0000 C CNN
+F 2 "" H 5150 1750 50  0001 C CNN
+F 3 "" H 5150 1750 50  0001 C CNN
+	1    5150 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 950  5250 950 
+Wire Wire Line
+	5250 1200 5150 1200
+Connection ~ 5150 1200
+Wire Wire Line
+	5150 1200 5150 950 
+Wire Wire Line
+	5150 1200 5150 1750
 $EndSCHEMATC
