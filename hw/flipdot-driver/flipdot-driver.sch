@@ -3010,4 +3010,49 @@ F 3 "~" H 3700 1400 50  0001 C CNN
 	1    3700 1400
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+24V #PWR01
+U 1 1 5CF7E71E
+P 2300 850
+F 0 "#PWR01" H 2300 700 50  0001 C CNN
+F 1 "+24V" H 2315 1023 50  0000 C CNN
+F 2 "" H 2300 850 50  0001 C CNN
+F 3 "" H 2300 850 50  0001 C CNN
+	1    2300 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5CF803D6
+P 2300 1450
+F 0 "#PWR02" H 2300 1200 50  0001 C CNN
+F 1 "GND" H 2305 1277 50  0000 C CNN
+F 2 "" H 2300 1450 50  0001 C CNN
+F 3 "" H 2300 1450 50  0001 C CNN
+	1    2300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L flipdot-driver-rescue:CP-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue C2
+U 1 1 5CF80FCA
+P 2700 1150
+F 0 "C2" H 2818 1196 50  0000 L CNN
+F 1 "47u" H 2818 1105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2738 1000 50  0001 C CNN
+F 3 "" H 2700 1150 50  0001 C CNN
+	1    2700 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1400 2700 1400
+Wire Wire Line
+	2700 1400 2700 1300
+Wire Wire Line
+	2300 1400 2300 1450
+Wire Wire Line
+	2300 850  2300 950 
+Wire Wire Line
+	2300 950  2700 950 
+Wire Wire Line
+	2700 950  2700 1000
 $EndSCHEMATC
