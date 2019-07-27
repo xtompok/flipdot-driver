@@ -1,0 +1,5 @@
+*.sw[mnop]
+bin/
+flipdot-driver.elf
+flipdot-driver.bin
+generated.stm32f103c8tx.ld
