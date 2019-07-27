@@ -415,6 +415,21 @@ X R1.2 8 -200 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Mechanical_Fiducial
+#
+DEF Mechanical_Fiducial FID 0 20 Y Y 1 F N
+F0 "FID" 0 200 50 H V C CNN
+F1 "Mechanical_Fiducial" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Fiducial*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 20 f
+ENDDRAW
+ENDDEF
+#
 # Mechanical_MountingHole_Pad
 #
 DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
@@ -577,11 +592,11 @@ X COM 9 400 400 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# flipdot-driver-rescue_AX5201-LCSC-flipdot-driver-rescue
+# flipdot-driver-rescue_AX5201-LCSC-flipdot-driver-rescue-flipdot-driver-rescue
 #
-DEF flipdot-driver-rescue_AX5201-LCSC-flipdot-driver-rescue U 0 40 Y Y 1 F N
+DEF flipdot-driver-rescue_AX5201-LCSC-flipdot-driver-rescue-flipdot-driver-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 400 50 H V C CNN
-F1 "flipdot-driver-rescue_AX5201-LCSC-flipdot-driver-rescue" 0 -300 50 H V C CNN
+F1 "flipdot-driver-rescue_AX5201-LCSC-flipdot-driver-rescue-flipdot-driver-rescue" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -598,11 +613,11 @@ X EP 9 400 200 100 L 50 50 1 1 w N
 ENDDRAW
 ENDDEF
 #
-# flipdot-driver-rescue_C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue
+# flipdot-driver-rescue_C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue
 #
-DEF flipdot-driver-rescue_C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C 0 10 N Y 1 F N
+DEF flipdot-driver-rescue_C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "flipdot-driver-rescue_C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue" 25 -100 50 H V L CNN
+F1 "flipdot-driver-rescue_C-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -616,11 +631,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# flipdot-driver-rescue_CP-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue
+# flipdot-driver-rescue_CP-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue
 #
-DEF flipdot-driver-rescue_CP-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue C 0 10 N Y 1 F N
+DEF flipdot-driver-rescue_CP-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "flipdot-driver-rescue_CP-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue" 25 -100 50 H V L CNN
+F1 "flipdot-driver-rescue_CP-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -639,11 +654,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# flipdot-driver-rescue_D_Schottky-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue
+# flipdot-driver-rescue_D_Schottky-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue
 #
-DEF flipdot-driver-rescue_D_Schottky-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue D 0 40 N N 1 F N
+DEF flipdot-driver-rescue_D_Schottky-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "flipdot-driver-rescue_D_Schottky-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue" 0 -100 50 H V C CNN
+F1 "flipdot-driver-rescue_D_Schottky-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -662,11 +677,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# flipdot-driver-rescue_L-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue
+# flipdot-driver-rescue_L-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue
 #
-DEF flipdot-driver-rescue_L-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue L 0 40 N N 1 F N
+DEF flipdot-driver-rescue_L-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue L 0 40 N N 1 F N
 F0 "L" -50 0 50 V V C CNN
-F1 "flipdot-driver-rescue_L-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue" 75 0 50 V V C CNN
+F1 "flipdot-driver-rescue_L-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue" 75 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -685,11 +700,11 @@ X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# flipdot-driver-rescue_LED-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue
+# flipdot-driver-rescue_LED-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue
 #
-DEF flipdot-driver-rescue_LED-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue D 0 40 Y N 1 F N
+DEF flipdot-driver-rescue_LED-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "flipdot-driver-rescue_LED-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue" 0 -100 50 H V C CNN
+F1 "flipdot-driver-rescue_LED-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -706,11 +721,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# flipdot-driver-rescue_R-controller-cache
+# flipdot-driver-rescue_R-controller-cache-flipdot-driver-rescue
 #
-DEF flipdot-driver-rescue_R-controller-cache R 0 0 N Y 1 F N
+DEF flipdot-driver-rescue_R-controller-cache-flipdot-driver-rescue R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "flipdot-driver-rescue_R-controller-cache" 0 0 50 V V C CNN
+F1 "flipdot-driver-rescue_R-controller-cache-flipdot-driver-rescue" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -724,11 +739,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# flipdot-driver-rescue_R-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue
+# flipdot-driver-rescue_R-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue
 #
-DEF flipdot-driver-rescue_R-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue R 0 0 N Y 1 F N
+DEF flipdot-driver-rescue_R-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "flipdot-driver-rescue_R-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue" 0 0 50 V V C CNN
+F1 "flipdot-driver-rescue_R-controller-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -742,11 +757,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# flipdot-driver-rescue_stm32_STM32F103C(8-B)Tx-STM32_converter-cache-flipdot-driver-rescue-flipdot-driver-rescue
+# flipdot-driver-rescue_stm32_STM32F103C(8-B)Tx-STM32_converter-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue
 #
-DEF flipdot-driver-rescue_stm32_STM32F103C(8-B)Tx-STM32_converter-cache-flipdot-driver-rescue-flipdot-driver-rescue U 0 50 Y Y 1 F N
+DEF flipdot-driver-rescue_stm32_STM32F103C(8-B)Tx-STM32_converter-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue U 0 50 Y Y 1 F N
 F0 "U" 0 100 50 H V C CNN
-F1 "flipdot-driver-rescue_stm32_STM32F103C(8-B)Tx-STM32_converter-cache-flipdot-driver-rescue-flipdot-driver-rescue" 0 -100 50 H V C CNN
+F1 "flipdot-driver-rescue_stm32_STM32F103C(8-B)Tx-STM32_converter-cache-flipdot-driver-rescue-flipdot-driver-rescue-flipdot-driver-rescue" 0 -100 50 H V C CNN
 F2 "LQFP48" 0 -200 50 H V C CIN
 F3 "" 0 0 50 H V C CNN
 DRAW
