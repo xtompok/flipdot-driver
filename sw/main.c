@@ -5,6 +5,7 @@
 
 #include "hardware.h"
 #include "delay.h"
+#include "font.h"
 
 
 static void clock_setup(void){
@@ -45,82 +46,23 @@ static void usart_setup(void){
 	usart_enable(USART1);
 }
 
-static void rows_spi_setup(void){
-	gpio_set_mode(ROWS_PORT, GPIO_MODE_OUTPUT_50_MHZ,
-		      GPIO_CNF_OUTPUT_PUSHPULL, ROW_STROBE_PIN);
-	gpio_set_mode(ROWS_PORT, GPIO_MODE_OUTPUT_50_MHZ,
-		      GPIO_CNF_OUTPUT_ALTFN_PUSHPULL, ROW_CLK_PIN);
-	gpio_set_mode(ROWS_PORT, GPIO_MODE_OUTPUT_50_MHZ,
-		      GPIO_CNF_OUTPUT_ALTFN_PUSHPULL, ROW_DATA_PIN);
-	// ! OE is on other port than other pins!
-	gpio_set_mode(ROW_OE_PORT, GPIO_MODE_OUTPUT_50_MHZ,
-		      GPIO_CNF_OUTPUT_PUSHPULL, ROW_OE_PIN);
 
-	spi_set_unidirectional_mode(ROWS_SPI);
-	spi_disable_crc(ROWS_SPI);
-	spi_set_full_duplex_mode(ROWS_SPI);
-	spi_set_baudrate_prescaler(ROWS_SPI,SPI_CR1_BR_FPCLK_DIV_256);
-	spi_set_clock_phase_1(ROWS_SPI);
-	spi_set_clock_polarity_0(ROWS_SPI);
-	spi_set_dff_8bit(ROWS_SPI);
-	spi_send_lsb_first(ROWS_SPI);
-	spi_enable_software_slave_management(ROWS_SPI);
-	spi_set_nss_high(ROWS_SPI);
-	spi_set_master_mode(ROWS_SPI);
-	spi_enable(ROWS_SPI);
-
-}
-static volatile void column_shift(void){
-	delay_ms(COL_DELAY_US);
-	gpio_set(COLS_PORT, COL_CLK_PIN);
-	delay_ms(COL_DELAY_US);
-	gpio_clear(COLS_PORT, COL_CLK_PIN);
-	led2_toggle();
-}
-
-static void column_setup(void){
-	gpio_set_mode(COLS_PORT, GPIO_MODE_OUTPUT_2_MHZ,
-		      GPIO_CNF_OUTPUT_PUSHPULL, COL_RST_PIN);
-	gpio_set_mode(COLS_PORT, GPIO_MODE_OUTPUT_2_MHZ,
-		      GPIO_CNF_OUTPUT_PUSHPULL, COL_CLK_PIN);
-	gpio_set_mode(COLS_PORT, GPIO_MODE_OUTPUT_2_MHZ,
-		      GPIO_CNF_OUTPUT_PUSHPULL, COL_DATA_PIN);
-	gpio_set_mode(COLS_PORT, GPIO_MODE_INPUT, GPIO_CNF_INPUT_FLOAT, COL_RET_PIN);
-	
-
-
-}
-
-static void column_start(void){
-	// Reset registers
-	gpio_set(COLS_PORT, COL_RST_PIN);
-	delay_us(COL_DELAY_US);
-	gpio_clear(COLS_PORT, COL_RST_PIN);
-
-	//Send one "1"
-	gpio_set(COLS_PORT, COL_DATA_PIN);
-	delay_us(COL_DELAY_US);
-	gpio_set(COLS_PORT, COL_CLK_PIN);
-	delay_us(COL_DELAY_US);
-	gpio_clear(COLS_PORT, COL_DATA_PIN);
-	gpio_clear(COLS_PORT, COL_CLK_PIN);
-}
-
-static volatile uint16_t count_columns(void){
-	uint16_t count;
-	count = 1;
-
-	column_start();
-	while (gpio_get(COLS_PORT,COL_RET_PIN) == 0){
-//	while (count<50){
+static void print_char(unsigned char ch, uint16_t pos){
+	uint16_t col;
+	col = pos*5;
+	column_setup();
+	for (int i=0; i< col-1; i++){
 		column_shift();
-		count += 1;
-		if (count > 1000){
-			return 0xFFFF;
-		}
 	}
-	return count;
-	
+	ch-=32; // First 32 chars are not printable, thus not in font array
+	ch*=5;  // Font is one-dimensional, display has 5 columns per character
+	for (int i=0; i<5; i++){
+		rows_set(Font5x7[ch+i]);
+		delay_ms(100);
+		column_shift();	
+	}
+
+		
 }
 
 static void gpio_setup(void){
@@ -159,16 +101,18 @@ int main(void){
 	//gpio_set(STEPUP_PORT,STEPUP_PIN);
 	
 	//column_start();
+	uint8_t iteration;
+	iteration=0;
 
 	while (1) {
 		led1_toggle();
-		spi_send(ROWS_SPI,0x55);
-		spi_send(ROWS_SPI,~0x55);
-		gpio_set(ROWS_PORT,ROW_STROBE_PIN);
-		count_columns();
-		delay_ms(1);
-		gpio_clear(ROWS_PORT,ROW_STROBE_PIN);
+		print_char('A',iteration%5);
+		print_char('h',iteration%5+1);
+		print_char('o',iteration%5+2);
+		print_char('j',iteration%5+3);
+		print_char('!',iteration%5+4);
 		delay_ms(1000);
+		iteration++;
 	}
 
 	return 0;
