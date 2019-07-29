@@ -4,7 +4,7 @@ BUILD_DIR = bin
 V=1
 
 #SHARED_DIR = ../my-common-code
-CFILES = main.c
+CFILES = main.c delay.c
 #CFILES += api.c
 #AFILES += api-asm.S
 
