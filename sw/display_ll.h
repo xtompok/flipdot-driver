@@ -6,6 +6,7 @@
 void rows_spi_setup(void);
 
 void rows_set(uint8_t bitmap);
+void rows_off(void);
 
 void column_shift(void);
 

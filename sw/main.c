@@ -6,6 +6,7 @@
 #include "hardware.h"
 #include "delay.h"
 #include "font.h"
+#include "display_ll.h"
 
 
 static void clock_setup(void){
@@ -50,15 +51,17 @@ static void usart_setup(void){
 static void print_char(unsigned char ch, uint16_t pos){
 	uint16_t col;
 	col = pos*5;
-	column_setup();
+	column_start();
 	for (int i=0; i< col-1; i++){
 		column_shift();
 	}
 	ch-=32; // First 32 chars are not printable, thus not in font array
 	ch*=5;  // Font is one-dimensional, display has 5 columns per character
 	for (int i=0; i<5; i++){
-		rows_set(Font5x7[ch+i]);
-		delay_ms(100);
+		rows_set(Font5x7[ch+i]<<1);
+		delay_ms(500);
+		rows_off();
+		delay_ms(10);
 		column_shift();	
 	}
 
@@ -84,7 +87,6 @@ void led2_toggle(void){
 
 
 int main(void){
-	int i;
 
 	clock_setup();
 	usart_setup();
@@ -104,14 +106,39 @@ int main(void){
 	uint8_t iteration;
 	iteration=0;
 
+	uint16_t ncols;
+	ncols = count_columns();
+
+	rows_set(0x00);
+	column_start();
+	for (int i=0;i<25;i++){
+		column_shift();
+		delay_ms(500);
+	}
+	rows_off();
+
 	while (1) {
+	rows_set(0x00);
+	column_start();
+	for (int i=0;i<25;i++){
+		column_shift();
+		delay_ms(500);
+	}
+	rows_off();
 		led1_toggle();
 		print_char('A',iteration%5);
-		print_char('h',iteration%5+1);
-		print_char('o',iteration%5+2);
-		print_char('j',iteration%5+3);
-		print_char('!',iteration%5+4);
-		delay_ms(1000);
+		delay_ms(3000);
+		print_char('!',iteration%5);
+		delay_ms(3000);
+//		print_char('h',(iteration+1)%5);
+//		delay_ms(3000);
+//		print_char('o',(iteration+2)%5);
+//		delay_ms(3000);
+//		print_char('j',(iteration+3)%5);
+//		delay_ms(3000);
+//		print_char('!',(iteration+4)%5);
+//		delay_ms(3000);
+		led1_toggle();
 		iteration++;
 	}
 

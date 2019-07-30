@@ -35,8 +35,17 @@ void rows_set(uint8_t bitmap){
 	spi_send(ROWS_SPI,bitmap);	
 	spi_send(ROWS_SPI,~bitmap);	
 	gpio_set(ROWS_PORT,ROW_STROBE_PIN);
-	delay_us(1000);
+	delay_us(10000);
 	gpio_clear(ROWS_PORT, ROW_STROBE_PIN);
+}
+
+void rows_off(void){
+	spi_send(ROWS_SPI,0x00);	
+	spi_send(ROWS_SPI,0x00);	
+	gpio_set(ROWS_PORT,ROW_STROBE_PIN);
+	delay_us(10000);
+	gpio_clear(ROWS_PORT, ROW_STROBE_PIN);
+
 }
 
 void column_shift(void){
