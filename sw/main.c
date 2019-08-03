@@ -51,21 +51,39 @@ static void usart_setup(void){
 static void print_char(unsigned char ch, uint16_t pos){
 	uint16_t col;
 	col = pos*5;
+	rows_off();
 	column_start();
-	for (int i=0; i< col-1; i++){
+	for (int i=0; i< col; i++){
 		column_shift();
 	}
-	ch-=32; // First 32 chars are not printable, thus not in font array
-	ch*=5;  // Font is one-dimensional, display has 5 columns per character
+	uint16_t idx;
+	idx=ch-32; // First 32 chars are not printable, thus not in font array
+	idx*=5;  // Font is one-dimensional, display has 5 columns per character
 	for (int i=0; i<5; i++){
-		rows_set(Font5x7[ch+i]<<1);
-		delay_ms(500);
+		rows_set((Font5x7[idx+i]));
+		delay_ms(70);
 		rows_off();
-		delay_ms(10);
+		delay_ms(20);
 		column_shift();	
+		delay_ms(1);
+	}
+		
+}
+
+static void fill(uint8_t pattern){
+		column_start();
+	for (int j=0;j<25;j++){
+		/*for (int i=0;i<j-1;i++){
+		}*/
+		rows_set(pattern);
+		delay_ms(70);
+		rows_off();
+		delay_ms(20);
+		column_shift();
+		pattern=0xFF^pattern;
+//		delay_ms(500);
 	}
 
-		
 }
 
 static void gpio_setup(void){
@@ -100,7 +118,7 @@ int main(void){
 	usart_send_blocking(USART1,'\n');
 
 	gpio_clear(ROW_OE_PORT,ROW_OE_PIN);
-	//gpio_set(STEPUP_PORT,STEPUP_PIN);
+	gpio_set(STEPUP_PORT,STEPUP_PIN);
 	
 	//column_start();
 	uint8_t iteration;
@@ -109,35 +127,30 @@ int main(void){
 	uint16_t ncols;
 	ncols = count_columns();
 
-	rows_set(0x00);
-	column_start();
-	for (int i=0;i<25;i++){
-		column_shift();
-		delay_ms(500);
-	}
-	rows_off();
-
 	while (1) {
-	rows_set(0x00);
-	column_start();
-	for (int i=0;i<25;i++){
-		column_shift();
-		delay_ms(500);
-	}
-	rows_off();
+		fill(0xFF^0x00);
+		fill(0x00);
+//		continue;
+/*		column_start();
+		for (int i=0;i<25;i++){
+			delay_ms(100);
+			column_shift();
+		}
 		led1_toggle();
+		continue;
+*/
 		print_char('A',iteration%5);
-		delay_ms(3000);
-		print_char('!',iteration%5);
-		delay_ms(3000);
-//		print_char('h',(iteration+1)%5);
-//		delay_ms(3000);
-//		print_char('o',(iteration+2)%5);
-//		delay_ms(3000);
-//		print_char('j',(iteration+3)%5);
-//		delay_ms(3000);
-//		print_char('!',(iteration+4)%5);
-//		delay_ms(3000);
+//		delay_ms(1000);
+//		print_char('!',iteration%5);
+//		delay_ms(1000);
+		print_char('h',(iteration+1)%5);
+//		delay_ms(1000);
+		print_char('j',(iteration+3)%5);
+//		delay_ms(1000);
+		print_char('o',(iteration+2)%5);
+//		delay_ms(1000);
+		print_char('!',(iteration+4)%5);
+		delay_ms(1000);
 		led1_toggle();
 		iteration++;
 	}

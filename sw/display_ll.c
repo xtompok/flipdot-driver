@@ -20,7 +20,7 @@ void rows_spi_setup(void){
 	spi_disable_crc(ROWS_SPI);
 	spi_set_full_duplex_mode(ROWS_SPI);
 	spi_set_baudrate_prescaler(ROWS_SPI,SPI_CR1_BR_FPCLK_DIV_256);
-	spi_set_clock_phase_1(ROWS_SPI);
+	spi_set_clock_phase_0(ROWS_SPI);
 	spi_set_clock_polarity_0(ROWS_SPI);
 	spi_set_dff_8bit(ROWS_SPI);
 	spi_send_lsb_first(ROWS_SPI);
@@ -33,18 +33,22 @@ void rows_spi_setup(void){
 
 void rows_set(uint8_t bitmap){
 	spi_send(ROWS_SPI,bitmap);	
-	spi_send(ROWS_SPI,~bitmap);	
+	spi_send(ROWS_SPI,0xFF^bitmap);	
+	delay_us(800); //Wait until SPI data are sent
 	gpio_set(ROWS_PORT,ROW_STROBE_PIN);
-	delay_us(10000);
+	delay_us(100);
 	gpio_clear(ROWS_PORT, ROW_STROBE_PIN);
+	delay_us(100);
 }
 
 void rows_off(void){
 	spi_send(ROWS_SPI,0x00);	
 	spi_send(ROWS_SPI,0x00);	
+	delay_us(800); //Wait until SPI data are sent
 	gpio_set(ROWS_PORT,ROW_STROBE_PIN);
-	delay_us(10000);
+	delay_us(100);
 	gpio_clear(ROWS_PORT, ROW_STROBE_PIN);
+	delay_us(100);
 
 }
 
@@ -57,11 +61,11 @@ void column_shift(void){
 }
 
 void column_setup(void){
-	gpio_set_mode(COLS_PORT, GPIO_MODE_OUTPUT_2_MHZ,
+	gpio_set_mode(COLS_PORT, GPIO_MODE_OUTPUT_50_MHZ,
 		      GPIO_CNF_OUTPUT_PUSHPULL, COL_RST_PIN);
-	gpio_set_mode(COLS_PORT, GPIO_MODE_OUTPUT_2_MHZ,
+	gpio_set_mode(COLS_PORT, GPIO_MODE_OUTPUT_50_MHZ,
 		      GPIO_CNF_OUTPUT_PUSHPULL, COL_CLK_PIN);
-	gpio_set_mode(COLS_PORT, GPIO_MODE_OUTPUT_2_MHZ,
+	gpio_set_mode(COLS_PORT, GPIO_MODE_OUTPUT_50_MHZ,
 		      GPIO_CNF_OUTPUT_PUSHPULL, COL_DATA_PIN);
 	gpio_set_mode(COLS_PORT, GPIO_MODE_INPUT, GPIO_CNF_INPUT_FLOAT, COL_RET_PIN);
 	
@@ -74,6 +78,7 @@ void column_start(void){
 	gpio_set(COLS_PORT, COL_RST_PIN);
 	delay_us(COL_DELAY_US);
 	gpio_clear(COLS_PORT, COL_RST_PIN);
+	delay_us(COL_DELAY_US);
 
 	//Send one "1"
 	gpio_set(COLS_PORT, COL_DATA_PIN);
@@ -81,7 +86,9 @@ void column_start(void){
 	gpio_set(COLS_PORT, COL_CLK_PIN);
 	delay_us(COL_DELAY_US);
 	gpio_clear(COLS_PORT, COL_DATA_PIN);
+	delay_us(COL_DELAY_US);
 	gpio_clear(COLS_PORT, COL_CLK_PIN);
+	delay_us(COL_DELAY_US);
 }
 
 uint16_t count_columns(void){
