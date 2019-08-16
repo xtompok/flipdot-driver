@@ -34,7 +34,7 @@ void rows_spi_setup(void){
 void rows_set(uint8_t bitmap){
 	spi_send(ROWS_SPI,bitmap);	
 	spi_send(ROWS_SPI,0xFF^bitmap);	
-	delay_us(800); //Wait until SPI data are sent
+	delay_us(1500); //Wait until SPI data are sent
 	gpio_set(ROWS_PORT,ROW_STROBE_PIN);
 	delay_us(100);
 	gpio_clear(ROWS_PORT, ROW_STROBE_PIN);

@@ -28,13 +28,14 @@ extern "C" {
 	 * Initialize the timers used for delays.
 	 */
 	void delay_setup(void);
+	uint64_t millis(void);
 
 	/**
 	 * busy wait for a number of usecs.
 	 * @param us number of usecs to delay.
 	 */
 	void delay_us(uint16_t us);
-	void delay_ms(uint16_t ms);
+	void delay(uint64_t ms);
 
 #ifdef __cplusplus
 }
