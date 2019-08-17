@@ -6,13 +6,21 @@
 
 void print_str(char * str, uint16_t pos){
 	while (*str != '\0'){
-		print_char((unsigned char)*str,pos);
+		print_char((unsigned char)*str,pos,0);
 		str++;
 		pos++;	
 	}	
 }
 
-void print_char(unsigned char ch, uint16_t pos){
+void print_inv_str(char * str, uint16_t pos){
+	while (*str != '\0'){
+		print_char((unsigned char)*str,pos,1);
+		str++;
+		pos++;	
+	}	
+}
+
+void print_char(unsigned char ch, uint16_t pos, uint8_t inv){
 	uint16_t col;
 	col = pos*5;
 	// HACK
@@ -28,7 +36,11 @@ void print_char(unsigned char ch, uint16_t pos){
 	idx=ch-32; // First 32 chars are not printable, thus not in font array
 	idx*=5;  // Font is one-dimensional, display has 5 columns per character
 	for (int i=0; i<5; i++){
-		rows_set((Font5x7[idx+i]));
+		if (!inv){
+			rows_set((Font5x7[idx+i]));
+		} else {
+			rows_set(0xFF^(Font5x7[idx+i]));
+		}
 		delay(15);
 		rows_off();
 		delay(10);

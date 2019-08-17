@@ -78,6 +78,7 @@ int main(void){
 	led1_toggle();
 	column_setup();
 
+
 	usart_send_blocking(USART1,'t');
 	usart_send_blocking(USART1,'\r');
 	usart_send_blocking(USART1,'\n');
@@ -88,16 +89,20 @@ int main(void){
 	//column_start();
 	uint8_t iteration;
 	iteration=0;
-
-	uint16_t ncols;
-	ncols = count_columns();
-
+	
+	uint64_t end;
+	end = cl_counter_setup(10);
+	//fill(0x00);
+	while (millis() < end){
+		cl_counter_refresh();
+		delay(100);
+	}
 	fill(0x00);
 	cl_timer_setup();
-
+	
 	while (1) {
 		cl_timer_refresh();
-		delay(250);
+		delay(100);
 		led1_toggle();
 		continue;
 
@@ -109,7 +114,7 @@ int main(void){
 		}
 		led1_toggle();
 		continue;
-*/
+
 		print_char(' ',(iteration+0*5)%75);
 		print_char('A',(iteration+1*5)%75);
 //		delay(1000);
@@ -125,6 +130,7 @@ int main(void){
 		delay(200);
 		led1_toggle();
 		iteration++;
+	*/
 	}
 
 	return 0;
